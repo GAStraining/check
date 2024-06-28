@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Code Input</title>
+    <script type="text/javascript">
+        function openUrl() {
+            var courseCode = document.getElementById("courseCode").value;
+            var baseUrl = "https://www.myskillsfuture.gov.sg/api/take-attendance/";
+            var completeUrl = baseUrl + courseCode;
+            window.open(completeUrl, "_blank");
+        }
+    </script>
+</head>
+<body>
+    <h1>Enter Unique Course Code</h1>
+    <input type="text" id="courseCode" placeholder="Enter Course Code">
+    <button onclick="openUrl()">Submit</button>
+</body>
+</html>
